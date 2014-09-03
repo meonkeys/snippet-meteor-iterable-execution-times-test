@@ -1,0 +1,17 @@
+<head>
+  <title>test</title>
+</head>
+
+<body>
+  {{>main}}
+</body>
+
+<template name="main">
+  {{#each items1}}
+      {{>item}}
+  {{/each}}
+</template>
+
+<template name="item">
+    <p>Item: {{name}}</p>
+</template>
