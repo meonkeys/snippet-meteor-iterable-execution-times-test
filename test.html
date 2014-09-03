@@ -7,11 +7,13 @@
 </body>
 
 <template name="main">
+  <ul>
   {{#each items2}}
       {{>item}}
   {{/each}}
+  </ul>
 </template>
 
 <template name="item">
-    <p>Item: {{name}}</p>
+    <li>Item {{index}}: {{name}}</li>
 </template>
